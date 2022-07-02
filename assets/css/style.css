@@ -1,0 +1,91 @@
+@font-face {
+    font-family: georgia1;
+    src: url(../font/georgia/Georgia.ttf);
+  }
+
+  @font-face {
+    font-family: arial1;
+    src: url(../font/arial-cufonfonts/ARIAL.TTF);
+  }
+
+html,body{
+    padding: 0;
+    margin: 0;
+
+}
+
+body { background-color: #F7F5F2 !important; }
+
+
+.main{
+    padding: 133px 0;
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.leftSide{
+    font-family: georgia1;
+    color: #000000;
+    width: 30%;
+}
+
+.leftSide h4{
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.tagGroup {
+    margin-top: 20px;
+}
+
+.leftSide a{
+    color: #000000;
+    text-decoration: none;
+}
+
+.leftSide a:hover{
+    color: #7d7777;
+}
+
+.leftSide p{
+    font-family: arial1;
+}
+
+.rightSide {
+    width: 66%;
+}
+
+.rightSide p{
+    font-size: 16px;
+    color: #000000;
+    font-weight: 500;
+    font-family: arial1;
+}
+
+.rightSide .subTitle{
+    font-size: 20px;
+    color: #000000;
+    font-weight: 500;
+    font-family: arial1;
+}
+
+@media only screen and (max-width: 600px) {
+    .main{
+        padding: 25px 0;
+        width: 88%;
+        flex-direction: column;
+    }    
+
+    .leftSide{
+        width: 100%;
+        margin-bottom: 30px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid black;
+    }
+
+    .rightSide {
+        width: 100%;
+    }
+}
